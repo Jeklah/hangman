@@ -6,7 +6,6 @@
 package hangmanv1_5;
 
 /**
- *
  * @author Jeklah
  */
 public class HangmanV1_5 {

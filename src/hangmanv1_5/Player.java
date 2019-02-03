@@ -12,6 +12,5 @@ public class Player {
     char guess;
     public Player() {
         guess = ' ';
-        
     }
 }

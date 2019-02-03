@@ -14,6 +14,7 @@ import java.util.Random;
 public final class Game {
     Player player = new Player();
     Word newWord = new Word();
+ 
     
     public Game(){
         Random rand = new Random();
@@ -21,6 +22,7 @@ public final class Game {
         welcome();
         answer();
         astAnswer();
+        splitAnswer(newWord.ans);
     }
     public void welcome(){
         System.out.println("Welcome to Hangman!");
@@ -28,6 +30,13 @@ public final class Game {
 
     public void answer(){
         System.out.println("The word you have to guess is: " + newWord.ans);
+    }
+    
+    public void splitAnswer(String splitAns){
+        String[] astArr = splitAns.split("");
+        for (int i = 0; i < astArr.length; ++i) {
+            System.out.print(astArr[i] + ' ');
+        }
     }
 
     public void astAnswer(){
