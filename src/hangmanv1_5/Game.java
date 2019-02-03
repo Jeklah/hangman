@@ -27,7 +27,7 @@ public final class Game {
     }
 
     public void answer(){
-        System.out.print("The word you have to guess is: " + newWord.ans + "\n");
+        System.out.println("The word you have to guess is: " + newWord.ans);
     }
 
     public void astAnswer(){
