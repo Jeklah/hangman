@@ -14,11 +14,9 @@ import java.util.Random;
 public final class Game {
     Player player = new Player();
     Word newWord = new Word();
- 
-    
+
+
     public Game(){
-        Random rand = new Random();
-        int myRand = rand.nextInt(newWord.words.length);
         welcome();
         answer();
         astAnswer();
@@ -31,7 +29,7 @@ public final class Game {
     public void answer(){
         System.out.println("The word you have to guess is: " + newWord.ans);
     }
-    
+
     public void splitAnswer(String splitAns){
         String[] astArr = splitAns.split("");
         for (int i = 0; i < astArr.length; ++i) {
@@ -42,5 +40,5 @@ public final class Game {
     public void astAnswer(){
         System.out.println(newWord.astAns);
     }
-    
+
 }
